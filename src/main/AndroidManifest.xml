@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.resume_builder">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.personalActivity"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.personalQualityActivity"
+            android:label="@string/qlabel"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.techSkillsActivity"
+            android:label="@string/skill_label"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.AcademiaActivity"
+            android:label="@string/academia"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.trainingActivity"
+            android:label="@string/training_label"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.InterestActivity"
+            android:label="@string/aoi_label"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.nbgc.resume_builder.Activities.finalActivity"
+            android:label="@string/final_label"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+    </application>
+
+</manifest>
